@@ -1,9 +1,0 @@
-{
-  "subtrees": [
-    {
-      "prefix": "clinerules",
-      "repo_url": "https://github.com/your-org/clinerules.git",
-      "branch": "main"
-    }
-  ]
-}
