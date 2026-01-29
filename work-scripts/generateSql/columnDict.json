@@ -1,0 +1,82 @@
+{
+  "prefix": "bulk",
+  "__common": {
+    "店舗コード": {
+      "column": "storeCode",
+      "typeHint": "TEXT"
+    },
+    "取引日": {
+      "column": "transactionDate",
+      "typeHint": "DATE"
+    },
+    "数量": {
+      "column": "quantity",
+      "typeHint": "INTEGER"
+    },
+    "金額": {
+      "column": "amount",
+      "typeHint": "INTEGER"
+    },
+    "商品名": {
+      "column": "productName",
+      "typeHint": "TEXT"
+    },
+    "店舗名": {
+      "column": "storeName",
+      "typeHint": "TEXT"
+    },
+    "区分": {
+      "column": "transactionType",
+      "typeHint": "TEXT"
+    },
+    "日付": {
+      "column": "date",
+      "typeHint": "DATE"
+    },
+    "コード": {
+      "column": "salesCode",
+      "typeHint": "TEXT"
+    },
+    "コード名称": {
+      "column": "salesCodeName",
+      "typeHint": "TEXT"
+    },
+    "品種": {
+      "column": "productType",
+      "typeHint": "TEXT"
+    },
+    "大分類コード": {
+      "column": "categoryLevel1",
+      "typeHint": "TEXT"
+    },
+    "中分類コード": {
+      "column": "categoryLevel2",
+      "typeHint": "TEXT"
+    },
+    "分類コード": {
+      "column": "categoryLevel3",
+      "typeHint": "TEXT"
+    },
+    "商品番号": {
+      "column": "productNumber",
+      "typeHint": "TEXT"
+    },
+    "JANコード": {
+      "column": "janCode",
+      "typeHint": "TEXT"
+    },
+    "消費税": {
+      "column": "taxAmount",
+      "typeHint": "INTEGER"
+    },
+    "値引金額": {
+      "column": "discountAmount",
+      "typeHint": "INTEGER"
+    },
+    "買取時商品名": {
+      "column": "originalName",
+      "typeHint": "TEXT"
+    }
+  },
+  "csv_01": {}
+}
