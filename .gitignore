@@ -15,4 +15,5 @@ __pycache__/
 *.pyc
 .idea/
 .venv/
-shared-config/*
+shared-config/
+shared-config/scripts/sync-subtree/subtree_config.json
