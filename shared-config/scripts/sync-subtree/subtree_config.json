@@ -1,9 +1,0 @@
-{
-  "subtrees": [
-    {
-      "prefix": "share-config",
-      "repo_url": "https://github.com/kei-jp/share-config.git",
-      "branch": "main"
-    }
-  ]
-}
