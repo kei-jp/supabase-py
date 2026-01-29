@@ -16,8 +16,42 @@
 
 ### 基本的な実行
 
+**重要:** `--root` 引数は必須です。同期対象のローカルリポジトリのルートディレクトリを指定してください。
+
 ```bash
-python sync_subtree.py
+python sync_subtree.py --root /path/to/your/repo
+```
+
+または短縮形：
+
+```bash
+python sync_subtree.py -r /path/to/your/repo
+```
+
+### コマンドライン引数
+
+#### 必須引数
+
+- `--root`, `-r`: ローカルリポジトリのルートディレクトリパス（必須）
+
+#### オプション引数
+
+- `--config`, `-c`: 設定ファイルのパス（デフォルト: `subtree_config.json`）
+
+### 使用例
+
+```bash
+# 基本的な使用方法
+python sync_subtree.py --root /home/user/my-project
+
+# カスタム設定ファイルを指定
+python sync_subtree.py --root /home/user/my-project --config custom_config.json
+
+# Windows環境での例
+python sync_subtree.py -r "C:\projects\my-repo"
+
+# 相対パスでの指定
+python sync_subtree.py -r ./my-project
 ```
 
 ### 実行条件
@@ -124,7 +158,28 @@ python sync_subtree.py
 
 ```bash
 # bashrc や zshrc に追加
-alias my-cli="python /path/to/sync_subtree.py && my-cli-command"
+alias my-cli="python /path/to/sync_subtree.py --root /path/to/repo && my-cli-command"
+
+# または、ラッパースクリプトを作成
+# wrapper.sh
+#!/bin/bash
+python /path/to/sync_subtree.py --root "$HOME/projects/my-repo"
+if [ $? -eq 0 ] || [ $? -eq 1 ]; then
+    # 成功またはスキップの場合は続行
+    my-cli-command "$@"
+fi
+```
+
+**Windows PowerShell での例：**
+
+```powershell
+# プロファイルに追加
+function My-CLI {
+    python C:\path\to\sync_subtree.py --root "C:\projects\my-repo"
+    if ($LASTEXITCODE -le 1) {
+        my-cli-command $args
+    }
+}
 ```
 
 ## 注意事項
