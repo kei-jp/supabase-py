@@ -1,0 +1,9 @@
+{
+  "subtrees": [
+    {
+      "prefix": "shared-config",
+      "repo_url": "https://github.com/kei-jp/shared-config.git",
+      "branch": "main"
+    }
+  ]
+}
