@@ -1,8 +1,8 @@
 {
   "subtrees": [
     {
-      "prefix": "clinerules",
-      "repo_url": "https://github.com/your-org/clinerules.git",
+      "prefix": "share-config",
+      "repo_url": "https://github.com/kei-jp/share-config.git",
       "branch": "main"
     }
   ]
