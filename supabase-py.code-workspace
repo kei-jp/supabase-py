@@ -1,7 +1,38 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	]
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "window.title": "${rootname}",
+        "workbench.colorTheme": "Default Dark+",
+        "workbench.iconTheme": "vscode-icons",
+        "workbench.colorCustomizations": {
+            "titleBar.activeBackground": "#5d3b6d",
+            "titleBar.activeForeground": "#ffffff",
+            "titleBar.inactiveBackground": "#3e2a4f",
+            "activityBar.background": "#4b2e5c",
+            "activityBar.foreground": "#ffffff",
+            "sideBar.background": "#2e2038",
+            "sideBar.foreground": "#dbcbed",
+            "statusBar.background": "#5d3b6d",
+            "statusBar.foreground": "#ffffff",
+            "statusBar.noFolderBackground": "#3a2b4a",
+            "editor.background": "#1b1523",
+            "editorGroupHeader.tabsBackground": "#332243",
+            "tab.activeBackground": "#774aa9",
+            "tab.inactiveBackground": "#2e2038",
+            "editorLineNumber.foreground": "#cbb8dc",
+            "panel.background": "#261c33",
+            "editorCursor.foreground": "#ddccff",
+            "editor.lineHighlightBackground": "#332243",
+            "editor.lineHighlightBorder": "#4b2e5c",
+            "terminalCursor.background": "#b299e5",
+            "terminalCursor.foreground": "#ffffff"
+        },
+        "files.exclude": {
+            "shared-config": true
+        }
+    }
 }
