@@ -297,13 +297,6 @@ def main() -> int:
     original_dir = os.getcwd()
 
     try:
-        os.chdir(root_path)
-        logger.info(f"作業ディレクトリを変更しました: {root_path}")
-    except Exception as e:
-        logger.error(f"ディレクトリの変更に失敗しました: {e}")
-        return 2
-
-    try:
         logger.info("Git サブツリー自動同期を開始します")
 
         # Git リポジトリかどうか確認
@@ -330,6 +323,13 @@ def main() -> int:
             config_path = str(root_path / config_path)
 
         subtree_configs = load_config(config_path)
+
+        try:
+            os.chdir(root_path)
+            logger.info(f"作業ディレクトリを変更しました: {root_path}")
+        except Exception as e:
+            logger.error(f"ディレクトリの変更に失敗しました: {e}")
+            return 2
 
         # サブツリー同期実行
         all_success = True
