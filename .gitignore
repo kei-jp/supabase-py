@@ -16,3 +16,4 @@ __pycache__/
 .idea/
 .venv/
 shared-config/
+.vscode
